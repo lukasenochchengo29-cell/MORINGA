@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Player Card */
+.player {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 30px;
+  width: 380px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+#title {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+audio {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 14px 0;
+}
+
+.controls button {
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition:
+    transform 0.12s ease,
+    background 0.12s ease;
+}
+
+.controls button:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+#progress {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+#progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.picker {
+  margin-top: 12px;
+  text-align: left;
+  color: #cfe8ff;
+  font-size: 0.9rem;
+}
+
+.picker label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.picker input[type="file"] {
+  width: 100%;
+}
+
+.playlist-wrap {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.playlist-wrap h3 {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #dff1ff;
+}
+
+.playlist {
+  list-style: none;
+  max-height: 160px;
+  overflow: auto;
+  padding: 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.playlist li {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  color: #e6f7ff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.playlist li:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.playlist li.active {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.02);
+  font-weight: 600;
+}
