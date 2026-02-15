@@ -129,11 +129,3 @@ python3 -m http.server 8000
 3. Click "Load local audio files" and choose MP3(s). Use the controls to play and navigate tracks.
 
 ---
-
-If you'd like, I can also:
-
-- A small on-screen playlist view showing filenames has been added (click a filename to play).
-- Restore optional lyrics features (local `.lrc` or remote lookup) behind a toggle.
-- Add keyboard shortcuts (space for play/pause, arrow keys for skip/seek).
-
-README generated and added to the project to satisfy the capstone documentation requirement.
